@@ -15,3 +15,6 @@ Finds UI changes between different versions of apps using Appium and OpenCV. Wri
   - Each time you take a screenshot with Appium, you call the `ci.compare_image` function and pass to it the new screenshot as well as the original one that you derived before.
 - Run: `python appium_script.py -m com.google.android.maps.MapsActivity -c com.google.android.apps.maps`
   - By default it finds the first device from `adb devices`. If you want to pass another one use: `-d <device id>`
+
+## Write your own Test
+- If you want to write your own test, extend the `ScriptCL` class, override its `run` method and modify the `appium_script.py` accordingly.
