@@ -10,7 +10,7 @@ Finds UI changes between different versions of apps using Appium and OpenCV. Wri
 - `pip install Appium-Python-Client`
 
 ## Run existing Test
-- The existing test is for Google Maps. 
+- The existing test is for Google Maps. Before running it, you should have a running instance of the `appium` server.
 - Ideally for your own solution, you will want to have taken the original screenshots beforehand. 
   - Each time you take a screenshot with Appium, you call the `ci.compare_image` function and pass to it the new screenshot as well as the original one that you derived before.
 - Run: `python appium_script.py -m com.google.android.maps.MapsActivity -c com.google.android.apps.maps`
